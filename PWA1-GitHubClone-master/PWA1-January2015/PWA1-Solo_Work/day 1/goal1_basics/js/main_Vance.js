@@ -151,13 +151,20 @@ console.log('------ numbers ----------');
     console.log("Number + Strings: ", myStr);
     document.write("<br>"+"Number + Strings: ", myStr);
     //other math operations will result in a number
-    
+    var myStr1 ="6" / 2;
+    console.log("Number / String ", myStr1);
+    document.write("<br>"+"Number / String: ", myStr1);
 
     //order of operations: ( ), *, /, +, -
-
+    var num4 = 4 +(6 * 5 - 10)/5;
+    console.log("Order of operation: ", num4);
+    document.write("<br>"+"Order of operation: ", num4);
 
     //modulo example
-
+    var num5 =10;
+    var num6 =3;
+    console.log("remainder: ", num5%num6);
+    document.write("<br>"+"remainder: ", num5%num6);
 
 // arrays: (definition, indexing, getter/setter)
 console.log('------ arrays ----------');
@@ -176,6 +183,18 @@ console.log('------ arrays ----------');
 
  */
    var myArr = ['bond', 007, function(){}, true];
+
+    console.log("index 0: ", myArr[0]);
+    document.write("<br>"+"index 0: ", myArr[0]);
+
+    console.log("index 1: ", myArr[1]);
+    document.write("<br>"+"index 1: ", myArr[1]);
+
+    console.log("index 2: ", myArr[2]);
+    document.write("<br>"+"index 2: ", myArr[2]);
+
+    console.log("index 3: ", myArr[3]);
+    document.write("<br>"+"index 3: ", myArr[3]);
 
  /*
     - arrays can hold any value type, separated by comma
@@ -196,7 +215,9 @@ console.log('------ arrays ----------');
 
  ********************************************/
 
-
+       var myArr1 = [10, 50, 100, 200];
+        console.log("The sum is: ", myArr1[0]+myArr1[1]+myArr1[2]+myArr1[3]);
+         document.write("<br>"+"The sum is: ", myArr1[0]+myArr1[1]+myArr1[2]+myArr1[3]);
 
 /*******************************************
 
@@ -213,6 +234,15 @@ console.log('------ arrays ----------');
 
  ********************************************/
 
+
+         var   myArray = new Array();
+            myArray[0] = "baseball";
+            myArray[1] = "football";
+            myArray[2] = "basketball";
+
+    alert(myArray[0]+", "+myArray[1]+", "+myArray[2]);
+    console.log(myArray[0]+", "+myArray[1]+", "+myArray[2]);
+    document.write("<br>"+myArray[0]+", "+myArray[1]+", "+myArray[2]);
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
@@ -279,6 +309,7 @@ console.log('------ conditionals ----------');
 
     // == performs a loose check of two values
 
+    
 
 
 /* ==============================================================
