@@ -6,109 +6,109 @@
  */
 
 // self-executing function
-(function (){
+(function () {
 // Alert Hello World
-alert("Hello user, Welcome!");
-console.log("***** Goal 1 basic is working!");
-document.write("<br>"+"***** Goal 1 basic is working!");
-/* 
-	Variables
+    alert("Hello user, Welcome!");
+    console.log("***** Goal 1 basic is working!");
+    document.write("<br>" + "***** Goal 1 basic is working!");
+    /*
+     Variables
 
      BREAKING A VARIABLE DOWN TO INDIVIDUAL PIECES
-         - an example
-            var lastName = "bond"
+     - an example
+     var lastName = "bond"
 
-         - variable declaration begins with the var keyword
-         - variable assignment uses the assignment operator  ( = )
-         - javascript does use loose typing
-         - this means the coding engine will determine the data type
-         automatically vs declaring what the variable will be
-         (string, number, boolean, etc).
+     - variable declaration begins with the var keyword
+     - variable assignment uses the assignment operator  ( = )
+     - javascript does use loose typing
+     - this means the coding engine will determine the data type
+     automatically vs declaring what the variable will be
+     (string, number, boolean, etc).
 
-	DATA TYPES:
-		string
-		number
-		boolean
-		array				[0, 1, 2]
-		function			function(){}
-		undefined
-		null
+     DATA TYPES:
+     string
+     number
+     boolean
+     array				[0, 1, 2]
+     function			function(){}
+     undefined
+     null
 
-	Variables: (assignment vs declaration, naming, and literals)
-	
-	Variable Names:
-		can have:  letters, numbers, underscore, or $
-		cannot have spaces
-		cannot begin with a number
-		is case-sensitive
-		should use camelCasing
-		make the variable name meaningful
+     Variables: (assignment vs declaration, naming, and literals)
 
-    legal vs illegal var names (see :
-    - legal   var lastName;
-    - legal   var _ID;
-    - legal   var $name;
-    - legal   var name007;
-*/
+     Variable Names:
+     can have:  letters, numbers, underscore, or $
+     cannot have spaces
+     cannot begin with a number
+     is case-sensitive
+     should use camelCasing
+     make the variable name meaningful
+
+     legal vs illegal var names (see :
+     - legal   var lastName;
+     - legal   var _ID;
+     - legal   var $name;
+     - legal   var name007;
+     */
 // variables
-console.log('------ variables ----------');
+    console.log('------ variables ----------');
 
     //example 1: variables defined properly
-    var name="Levance", course="PWA-1", month=1;
-    alert("Hello "+name +","+"What's up");
-    console.log("hello", name +","+"what's up");
-    document.write("<br>"+"hello ", name +","+"what's up");
+    var name = "Levance", course = "PWA-1", month = 1;
+    alert("Hello " + name + "," + "What's up");
+    console.log("hello", name + "," + "what's up");
+    document.write("<br>" + "hello ", name + "," + "what's up");
     //example 2: variables not defined will = "undefined"
     var name1, course1, month1;
     console.log(name1, course1, month1);
-    document.write("<br>"+name1, course1, month1);
+    document.write("<br>" + name1, course1, month1);
     //example 3: a mix of variables defined and not defined
-    var name3, course3="PWA-1", month3;
-    console.log("NAME: "+name3+"COURSE: "+course3+ "MONTH: "+ month3);
-    document.write("<br>"+" NAME: "+name3 +" COURSE: "+course3 + " MONTH: "+ month3);
+    var name3, course3 = "PWA-1", month3;
+    console.log("NAME: " + name3 + "COURSE: " + course3 + "MONTH: " + month3);
+    document.write("<br>" + " NAME: " + name3 + " COURSE: " + course3 + " MONTH: " + month3);
     //example 4: declaring multiple variables at once w/ same value
     var a = b = c = d = 10;
-    console.log("a: "+ a+ " b: "+ b+" c: "+ c+" d: "+ d);
-    document.write("<br>"+"a: "+ a+ " b: "+ b+" c: "+ c+" d: "+ d);
+    console.log("a: " + a + " b: " + b + " c: " + c + " d: " + d);
+    document.write("<br>" + "a: " + a + " b: " + b + " c: " + c + " d: " + d);
 
 // string (definition, concatenation, escape character)
-console.log('------ strings ----------');
+    console.log('------ strings ----------');
 
     //basic string
-    var name4= "Wiz Khalifa";
-    var course4= "KK";
-    var month4= "1";
-    console.log("NAME: "+name4+"COURSE: "+course4+ "MONTH: "+ month4);
-    document.write("<br>"+" NAME: "+name4 +" COURSE: "+course4 + " MONTH: "+ month4);
+    var name4 = "Wiz Khalifa";
+    var course4 = "KK";
+    var month4 = "1";
+    console.log("NAME: " + name4 + "COURSE: " + course4 + "MONTH: " + month4);
+    document.write("<br>" + " NAME: " + name4 + " COURSE: " + course4 + " MONTH: " + month4);
 
     //string w/ escape characters " \ "
     var musicArtist = "He\'s in PWA-1";
     console.log(musicArtist);
-    document.write("<br>"+musicArtist);
+    document.write("<br>" + musicArtist);
 
     //string w/ escape characters and mixed single/double quotes
     var testString = "Levance needs some \"quotes\" to be here";
     console.log(testString);
-    document.write("<br>"+testString);
+    document.write("<br>" + testString);
 
     //this example shows that all the "phase" vars above were overwritten
     var testString3 = "He\'s in PWA-1";
-    console.log("Jay-Z's song is 99 problems. "+testString3);
-    document.write("<br>"+"Jay-Z's song is 99 problems. "+testString3);
+    console.log("Jay-Z's song is 99 problems. " + testString3);
+    document.write("<br>" + "Jay-Z's song is 99 problems. " + testString3);
 
 // numbers (definition, concatenation +, math, numbers & strings)
-console.log('------ numbers ----------');
+    console.log('------ numbers ----------');
 
     // arithmetic operators:  +, -, /, *, % (modulo)
 
     //basic math
     var num = 10;
-    console.log("Levance's Basic Math Number work: "+ num); //
-    document.write("<br>"+"Levance's Basic Math Number work: "+ num ); //
+    console.log("Levance's Basic Math Number work: " + num); //
+    document.write("<br>" + "Levance's Basic Math Number work: " + num); //
 
     var counter = 10;
     console.log("Levance's Basic Math Counter work: ", counter + 1); //
-    document.write("<br>"+"Levance's Basic Math Counter work: ", counter + 1); //
+    document.write("<br>" + "Levance's Basic Math Counter work: ", counter + 1); //
 
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
     //one example below, can show more examples with other assignment operators
@@ -116,64 +116,64 @@ console.log('------ numbers ----------');
     var num2 = 5;
     num1 += num2;
     console.log("The += operator is a faster way to add 2 numbers: ", num1 + num2);
-    document.write("<br>"+"The += operator is a faster way to add 2 numbers: ", num1 + num2);
+    document.write("<br>" + "The += operator is a faster way to add 2 numbers: ", num1 + num2);
 
     //increment or decrement numbers by 1 with ++ or --
     var myNum = 5;
     console.log("Just myNum = ", myNum);
-    document.write("<br>"+"Just myNum = ", myNum);//5
+    document.write("<br>" + "Just myNum = ", myNum);//5
 
     myNum++;
     console.log("But myNum++ increases to ", myNum);
-    document.write("<br>"+"But myNum++ increases to ", myNum);//6
+    document.write("<br>" + "But myNum++ increases to ", myNum);//6
 
     myNum--;
     console.log("But myNum-- decreases to ", myNum);
-    document.write("<br>"+"But myNum-- decreases to ", myNum); //5
+    document.write("<br>" + "But myNum-- decreases to ", myNum); //5
 
     //this decrements right before it is being used
     --num;
-    console.log("--PRE Decrement Counter: " , num);//9
-    document.write("<br>"+"--PRE Decrement Counter: " , num);//9
+    console.log("--PRE Decrement Counter: ", num);//9
+    document.write("<br>" + "--PRE Decrement Counter: ", num);//9
 
     //this decrements after it is used
     num--;
-    console.log("--POST Decrement Counter: " , num);//8
-    document.write("<br>"+"--POST Decrement Counter: " , num);//8
+    console.log("--POST Decrement Counter: ", num);//8
+    document.write("<br>" + "--POST Decrement Counter: ", num);//8
 
     //comment out the above example
     //this decrements after it is being used as well
     console.log("Near Line 146, Counter-- results in: ", num--);//8
-    document.write("<br>"+"Near Line 146, Counter-- results in: ", num--);//7
+    document.write("<br>" + "Near Line 146, Counter-- results in: ", num--);//7
 
     //add a number to a string is always a string
     var myStr = "6" + 2;
     console.log("Number + Strings: ", myStr);
-    document.write("<br>"+"Number + Strings: ", myStr);
+    document.write("<br>" + "Number + Strings: ", myStr);
     //other math operations will result in a number
-    var myStr1 ="6" / 2;
+    var myStr1 = "6" / 2;
     console.log("Number / String ", myStr1);
-    document.write("<br>"+"Number / String: ", myStr1);
+    document.write("<br>" + "Number / String: ", myStr1);
 
     //order of operations: ( ), *, /, +, -
-    var num4 = 4 +(6 * 5 - 10)/5;
+    var num4 = 4 + (6 * 5 - 10) / 5;
     console.log("Order of operation: ", num4);
-    document.write("<br>"+"Order of operation: ", num4);
+    document.write("<br>" + "Order of operation: ", num4);
 
     //modulo example
-    var num5 =10;
-    var num6 =3;
-    console.log("remainder: ", num5%num6);
-    document.write("<br>"+"remainder: ", num5%num6);
+    var num5 = 10;
+    var num6 = 3;
+    console.log("remainder: ", num5 % num6);
+    document.write("<br>" + "remainder: ", num5 % num6);
 
 // arrays: (definition, indexing, getter/setter)
-console.log('------ arrays ----------');
+    console.log('------ arrays ----------');
 
-/*
-    BREAKING AN ARRAY DOWN TO INDIVIDUAL PIECES
+    /*
+     BREAKING AN ARRAY DOWN TO INDIVIDUAL PIECES
 
      - as an example
-        var myArr = new myArr[];
+     var myArr = new myArr[];
 
      - arrays are a unique data type that can hold a collection of values
      - new = create a NEW array object - w/o the NEW it is called a literal array
@@ -181,219 +181,322 @@ console.log('------ arrays ----------');
      - myArr = new object of type array
      - in javascript, arrays are constructed by the brackets [ and ]
 
- */
-   var myArr = ['bond', 007, function(){}, true];
+     */
+    var myArr = ['bond', 007, function () {
+    }, true];
 
     console.log("index 0: ", myArr[0]);
-    document.write("<br>"+"index 0: ", myArr[0]);
+    document.write("<br>" + "index 0: ", myArr[0]);
 
     console.log("index 1: ", myArr[1]);
-    document.write("<br>"+"index 1: ", myArr[1]);
+    document.write("<br>" + "index 1: ", myArr[1]);
 
     console.log("index 2: ", myArr[2]);
-    document.write("<br>"+"index 2: ", myArr[2]);
+    document.write("<br>" + "index 2: ", myArr[2]);
 
     console.log("index 3: ", myArr[3]);
-    document.write("<br>"+"index 3: ", myArr[3]);
+    document.write("<br>" + "index 3: ", myArr[3]);
 
- /*
-    - arrays can hold any value type, separated by comma
-    - arrays are indexed numerically, beginning at 0
-    - to access or set a value, use an index number inside [ ]
- */
+    /*
+     - arrays can hold any value type, separated by comma
+     - arrays are indexed numerically, beginning at 0
+     - to access or set a value, use an index number inside [ ]
+     */
 
     //arrays can hold any data type
 
 
+    /*******************************************
 
- /*******************************************
+     STUDENT ACTIVITY 1:
 
- STUDENT ACTIVITY 1:
+     1.  create an array with 4 numbers 10, 50, 100, 200
+     2.  console.log the sum of all the numbers in an array
 
-    1.  create an array with 4 numbers 10, 50, 100, 200
-    2.  console.log the sum of all the numbers in an array
+     ********************************************/
 
- ********************************************/
+    var myArr1 = [10, 50, 100, 200];
+    console.log("The sum is: ", myArr1[0] + myArr1[1] + myArr1[2] + myArr1[3]);
+    document.write("<br>" + "The sum is: ", myArr1[0] + myArr1[1] + myArr1[2] + myArr1[3]);
 
-       var myArr1 = [10, 50, 100, 200];
-        console.log("The sum is: ", myArr1[0]+myArr1[1]+myArr1[2]+myArr1[3]);
-         document.write("<br>"+"The sum is: ", myArr1[0]+myArr1[1]+myArr1[2]+myArr1[3]);
+    /*******************************************
 
-/*******************************************
+     STUDENT ACTIVITY 2:
 
- STUDENT ACTIVITY 2:
+     1.  create an empty array called myArray
+     2.  Add to the myArray using setters, the following (baseball, football, basketball)
+     3.  console.log all items in one string with spaces
 
-    1.  create an empty array called myArray
-    2.  Add to the myArray using setters, the following (baseball, football, basketball)
-    3.  console.log all items in one string with spaces
+     GOAL
+     1. creating an empty array
+     2. setters to add to the array
+     3. output array items using string concatenation
 
- GOAL
-    1. creating an empty array
-    2. setters to add to the array
-    3. output array items using string concatenation
-
- ********************************************/
-
-
-         var   myArray = new Array();
-            myArray[0] = "baseball";
-            myArray[1] = "football";
-            myArray[2] = "basketball";
-
-    alert(myArray[0]+", "+myArray[1]+", "+myArray[2]);
-    console.log(myArray[0]+", "+myArray[1]+", "+myArray[2]);
-    document.write("<br>"+myArray[0]+", "+myArray[1]+", "+myArray[2]);
-
- // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
-console.log('------ conditionals ----------');
-
- /*
-
-    a CONDITION is a boolean test between two values, the resulting boolean can be saved
-
-    IF Statement
-
-        - the standard conditional of any programming language
-        - a way of splitting a linear path of options into multiple possibilities by
-            testing a condition
-        - if a specified condition evaluates to true (it’s either true or false),
-            then a block of code or a group of actions are executed
+     ********************************************/
 
 
-    BREAKING A VARIABLE DOWN TO INDIVIDUAL PIECES
+    var myArray = new Array();
+    myArray[0] = "baseball";
+    myArray[1] = "football";
+    myArray[2] = "basketball";
 
-    - as an example
-        if (condition) {
-            //block of code or‘actions’
-        };
+    alert(myArray[0] + ", " + myArray[1] + ", " + myArray[2]);
+    console.log(myArray[0] + ", " + myArray[1] + ", " + myArray[2]);
+    document.write("<br>" + myArray[0] + ", " + myArray[1] + ", " + myArray[2]);
 
-    - a more practical visual is this:
-        if (true) {
-            //I get to run!
-        };
+    // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
+    console.log('------ conditionals ----------');
 
-    - a condition is a block of 2 values being compared with a comparison operator
-        between them - the comparison operator evaluates the comparison and returns
-        a true or false boolean
-    - conditions can be used just about anywhere, not just in conditionals and loops
-*/
+    /*
+
+     a CONDITION is a boolean test between two values, the resulting boolean can be saved
+
+     IF Statement
+
+     - the standard conditional of any programming language
+     - a way of splitting a linear path of options into multiple possibilities by
+     testing a condition
+     - if a specified condition evaluates to true (it’s either true or false),
+     then a block of code or a group of actions are executed
 
 
+     BREAKING A VARIABLE DOWN TO INDIVIDUAL PIECES
 
-/*
+     - as an example
+     if (condition) {
+     //block of code or‘actions’
+     };
+
+     - a more practical visual is this:
+     if (true) {
+     //I get to run!
+     };
+
+     - a condition is a block of 2 values being compared with a comparison operator
+     between them - the comparison operator evaluates the comparison and returns
+     a true or false boolean
+     - conditions can be used just about anywhere, not just in conditionals and loops
+     */
+    var myVar = 5 > 3; //true
+    console.log("is 5 greater than 3 ", myVar);
+    document.write("<br>" + "is 5 greater than 3 ", myVar);
+
+    /*
      most common comparison operators:
      > < >=  <=  !== ! ==  ===
      Sort: A-Za-z
 
 
-    A conditional is a block of code that only runs if the condition is
-        true (example, state switching)
+     A conditional is a block of code that only runs if the condition is
+     true (example, state switching)
 
-    conditional syntax:
-        if (condition) {
-            //block of code or ‘actions’
-         };
-*/
+     conditional syntax:
+     if (condition) {
+     //block of code or ‘actions’
+     };
+     */
+    if (5 > 3) {
+        console.log("'5 > 3:', True!");
+        document.write("<br>" + "'5 > 3:', True!");
+    }
 
 
+    /*
+     - a common mistake is to use the assignment operator  = instead of the ==
+     - ==  used for comparing items
 
-/*
-    - a common mistake is to use the assignment operator  = instead of the ==
-    - ==  used for comparing items
-
-    ==============================================================
-       == is the equality operator, does not check against data type
-       === is the identity operator, checks data type match - will use this
-    ================================================================
-*/
+     ==============================================================
+     == is the equality operator, does not check against data type
+     === is the identity operator, checks data type match - will use this
+     ================================================================
+     */
 
     // == performs a loose check of two values
+    if ("1" == 1) {
+        console.log("'1' == 1, True");
+        document.write("<br>" + "'1' == 1, True");
+    }
+    ;
 
-    
+    if (1 == 1) {
+        console.log("'1' == 1, True");
+    }
+    ;
 
+    if ("1" === 1) {
+        console.log("'1' === 1, False");
+    }
+    ;
 
-/* ==============================================================
-    if - else statements (allows only for one option)
+    if ("1" !== 1) {
+        console.log("'1' == 1, True");
+    }
+    ;
+
+    /* ==============================================================
+     if - else statements (allows only for one option)
 
      if (a < b){
-        //execute this block of code if a is less than b
+     //execute this block of code if a is less than b
      }else{
-        //execute this block of code
+     //execute this block of code
      };
 
- ================================================================
- */
+     ================================================================
+     */
 
+    if (a < b) {
+        console.log("a is less than b");
+        document.write("<br>" + "a is less than b")
 
+    } else {
+        //execute this block of code if the "IF" statement returns false
+        console.log("if-else: the 'IF' statement is false");
+        document.write("<br>" + "if-else: the 'IF' statement is false")
+    }
+    ;
 
     //if - else if - else (allows for multiple options)
 
+    if (a < b) {
+        console.log("a is less than b");
+        document.write("<br>" + "a is less than b");
+    } else if (a < c) {
+        console.log("a is less than c");
+        document.write("<br>" + "a is less than c");
+    } else if (a < d) {
+        console.log("a is less than d");
+        document.write("<br>" + "a is less than d");
+    } else {
+        //execute this block of code if all the other return false
+        console.log("if-else: all others returned false")
+
+    }
 
 
     //nested conditional statement
 
+    if ("a" === "a") {  //1st IF statement
+        //execute this block of code if a is equal to a
+
+        if ("b" === "b") {  //nested IF statement: 2nd IF statement
+            //execute this block of code if a is equal to a
+            console.log("In Nested if-else / b === b: True");
+            document.write("<br>" + "In Nested if-else / b === b: True");
+        } else {//nested ELSE statement
+            //execute block of code if the matching IF statement returns false
+        }
+    } else {
+        //execute this block of code if the 1st IF statement
+
+    }
 
 
-/* ==============================================================
- LOGICAL operators
+    /* ==============================================================
+     LOGICAL operators
 
-    && = AND operator, if the left side returns false, then the whole
-        condition is false, and the right side is completely skipped
+     && = AND operator, if the left side returns false, then the whole
+     condition is false, and the right side is completely skipped
 
-    || = is the OR operator - used to compare two conditions, and if either
-        results in true, the overall condition is true
+     || = is the OR operator - used to compare two conditions, and if either
+     results in true, the overall condition is true
 
-    1. condition1 && condition2	// AND (both must be true)
-    2. condition1 || condition2	// OR (either must be true)
+     1. condition1 && condition2	// AND (both must be true)
+     2. condition1 || condition2	// OR (either must be true)
 
-    Always put simpler conditions on the left
- ================================================================
- */
+     Always put simpler conditions on the left
+     ================================================================
+     */
 
     //AND logical operator
 
+    if ((1 === 1) && ("hi" === "hi")) {
+        console.log('&& logical operator: both sides = true');
+        document.write("<br>" + '&& logical operator: both sides = true');
+    }
 
     //OR logical operator
 
+    if ((1 === 1) || ("hi" === "no")) {
+        console.log('|| logical operator: one sides = true');
+        document.write("<br>" + '|| logical operator: one sides = true');
+    }
 
     // ! NOT logical operator
 
+    if (!(1 === 1) || ("hi" === "no")) {
+        console.log('! NOT logical operator: left is true converted to NOT');
+        document.write("<br>" + '! NOT logical operator: left is true converted to NOT');
+    } else {
+        console.log('! NOT logical operator: both sides = false');
+        document.write("<br>" + '! NOT logical operator: both sides = false');
+    }
 
     // all logical operators with order of operations
 
 
+    /*******************************************
+     STUDENT ACTIVITY 3:
 
-/*******************************************
- STUDENT ACTIVITY 3:
+     1.  create a var called weather and make it equal "Cloudy"
+     2.  if weather is sunny "bobsMood" is happy
+     3    else "bobsMood" is sad
+     4.  console.log the results
 
-    1.  create a var called weather and make it equal "Cloudy"
-    2.  if weather is sunny "bobsMood" is happy
-    3	else "bobsMood" is sad
-    4.  console.log the results
+     GOAL
+     1. learn if - else
+     ********************************************/
+    var weather = "Cloudy";
+    if (weather === "Sunny") {
+        bobsMood = "happy";
+    } else {
+        bobsMood = "sad";
+    }
+    ;
+    console.log("If-Else weather: ", bobsMood);
+    document.write("<br>" + "If-Else weather: ", bobsMood);
 
- GOAL
-    1. learn if - else
- ********************************************/
 
+    /*******************************************
+     STUDENT ACTIVITY 4:
 
+     1.  make a copy of the code from Student Activity 3
+     2.  create another variable and call it "waves", make it equal to 10
+     3.  update the above code, implementing NESTED IF statements
+     - if "weather is sunny" and "waves = 10" "bobsMood = pumped"
+     - if "weather is sunny" and "waves = 9 to 5" "bobsMood = mellow"
+     - if "weather is sunny" and waves are any other results "bobsMood = bummed"
+     - if "weather is overcast" and "waves = 10 to 7" "bobsMood = jackedUp"
+     - if "weather is overcast" and "waves = 6 to 3" "bobsMood = totally Bummed"
+     - if "weather is overcast" and waves are any other results "bobsMood = not happy"
+     - else bobsMood = "sad"
+     3.  console.log the results after each conditional
+     ********************************************/
+    var weather = "Sunny";
+    var waves = 10;
 
-
-/*******************************************
- STUDENT ACTIVITY 4:
-
-    1.  make a copy of the code from Student Activity 3
-    2.  create another variable and call it "waves", make it equal to 10
-    3.  update the above code, implementing NESTED IF statements
-        - if "weather is sunny" and "waves = 10" "bobsMood = pumped"
-        - if "weather is sunny" and "waves = 9 to 5" "bobsMood = mellow"
-        - if "weather is sunny" and waves are any other results "bobsMood = bummed"
-        - if "weather is overcast" and "waves = 10 to 7" "bobsMood = jackedUp"
-        - if "weather is overcast" and "waves = 6 to 3" "bobsMood = totally Bummed"
-        - if "weather is overcast" and waves are any other results "bobsMood = not happy"
-        - else bobsMood = "sad"
-    3.  console.log the results after each conditional
- ********************************************/
-
+    if (weather === "Sunny") {
+        if (waves = 10) {
+            Mood = "PUMPED"
+        } else if ((waves <= 9) && (waves >= 5)) {
+            Mood = "Mellow";
+        } else {
+            Mood = "bummed";
+        }
+    }
+        else if (weather === "Overcast"){
+            if ((waves < 10) && (waves > 7)){
+                Mood = "jackedUP";
+            }else if ( (waves <=6) && (waves >= 3)){
+                Mood = "Totally Bummed";
+            }else{
+                Mood = "Not Happy"
+            }
+    }else{
+        Mood = "sad"
+    }
+    console.log("Mood: ", Mood);
+    document.write("<br>"+"Mood:  ", Mood);
 
 
 
@@ -416,9 +519,12 @@ console.log('------ conditionals ----------');
     - ? = perform the next statement if true
     - : = false (perform the new statement after the :)
  */
-
-
-
+var mood = (weather === 'Sunny' ? 'happy' : 'sad');
+        console.log('mood: ', mood);
+        document.write("<br>"+"mood: ", mood);
+var smile = true;
+        console.log("I am "+(smile === true ? "happy" : "sad" ) + '!!');
+    document.write("<br>","I am "+(smile === true ? "happy" : "sad" ) + '!!');
 /*******************************************
  STUDENT ACTIVITY 5:
 
@@ -431,7 +537,10 @@ console.log('------ conditionals ----------');
     4.  console.log the results
  ********************************************/
 
-
+            var temp = 60;
+            var student1 = (weather === "Sunny" ? "Happy" : ((temp >=80 ) ? 'content' : 'sad'));
+    console.log("Nested ternary weather: ", student1);
+    document.write("<br>","Nested ternary weather: ", student1);
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
 console.log('------Functions ----------');
@@ -455,7 +564,22 @@ console.log('------Functions ----------');
 
     - as an example:
         functionName();
+ ***************************
+*/
 
+     // function literal - example
+        var myctr = 1;
+
+        var myCounter = function(){
+            myctr++;
+            console.log('counter = ', myctr);
+            document.write("<br>",'counter = ', myctr);
+        };
+
+    myCounter();                    //will output "2" to the page
+    myCounter();
+
+/*
  *****************************
     ANONYMOUS FUNCTION
 
@@ -528,9 +652,16 @@ console.log('------Functions ----------');
      5.  second time: pass a 2 into the funciton as an argument
      6.  console.log the results
  ********************************************/
+var myctr = 1;
 
+    var myCounter = function(newct){
+        myctr += newct;
+        console.log('counter = ', myctr);
+        document.write("<br>",'counter = ', myctr);
+    };
 
-
+    myCounter(5);                    //will output "2" to the page
+    myCounter(2);
 
 /*******************************************
  function literal: returning values
@@ -560,10 +691,18 @@ console.log('------Functions ----------');
     4.  console.log the results
  ********************************************/
 
+var myctr = 1;
 
+    var myCounter = function(newct){
+        myctr += newct;
+            return newct;
+    };
 
+    var cnt = myCounter(5);
+    console.log("console = ", cnt);
+    document.write("<br>","console = ", cnt);
 
-/*******************************************
+    /*******************************************
  STUDENT ACTIVITY 8:
 
  1. copy the block of code from STUDENT ACTIVITY 4
@@ -573,4 +712,36 @@ console.log('------Functions ----------');
  5. console.log the Results
  ********************************************/
 
+    var value1 = "Sunny";
+    var value2 = 10;
+
+
+    var moodFN = function (weather, waves){
+        if (weather === "Sunny") {
+            if (waves = 10) {
+                Mood = "PUMPED"
+            } else if ((waves <= 9) && (waves >= 5)) {
+                Mood = "Mellow";
+            } else {
+                Mood = "bummed";
+            }
+        }
+        else if (weather === "Overcast"){
+            if ((waves < 10) && (waves > 7)){
+                Mood = "jackedUP";
+            }else if ( (waves <=6) && (waves >= 3)){
+                Mood = "Totally Bummed";
+            }else{
+                Mood = "Not Happy"
+            }
+        }else{
+            Mood = "sad"
+        }
+            return Mood;
+
+
+    };
+        var moodType = moodFN(value1,value2);
+    console.log("Mood: ", moodType);
+    document.write("<br>"+"Mood:  ", moodType);
 }) ();
