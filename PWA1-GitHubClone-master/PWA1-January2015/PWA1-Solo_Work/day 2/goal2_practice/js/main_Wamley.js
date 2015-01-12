@@ -1,9 +1,11 @@
 /*
-     Name:
-     Date:
+     Name: Levance Wamley
+     Date: 1/12/15
      Class & Section:  PWA1-####
      Comments: "Goal 2: JavaScript Practice"
  */
+		console.log("My Goal #2 Practice Activity Works!!!");
+		document.write("My Goal #2 Practice Activity Works!!!");
 
 // scope wrapper (self executing function)
 (function(){
@@ -37,9 +39,21 @@
 */
 
 console.log('------Recap Variables ----------');
+	 var  nothing;
+	myNum = 2;
+	myBoolean = true;
+	myArray =[10,'bondJames',true,function(){}];
+	fn = function(){};
 
 
+	//GETTER
+	console.log("myArray: ", myArray[1]);
+	document.write("<br>","myArray: ", myArray[1]);
 
+	//SETTER
+	myArray[1] = 'msBond';
+	console.log("myArray: ", myArray[1]);
+	document.write("<br>","myArray: ", myArray[1]);
 /*
 	===============================================
 	RECAP:  conditionals
@@ -64,6 +78,26 @@ console.log('------Recap Variables ----------');
 
 console.log('------Recap Conditionals ----------');
 
+	if ("1" == 1){
+		console.log("'1' == 1, True");
+		document.write("<br>","'1' == 1, True")
+	}
+
+	if (1 == 1){
+		console.log("1 == 1, True");
+		document.write("<br>","1 == 1, True");
+	}
+
+	if ("1" === 1){
+		console.log("'1' === 1, False");
+		document.write("<br>","'1' === 1, False");
+	}
+
+	if ("1" !== 1){
+		console.log("'1' !== 1, True");
+		document.write("<br>","'1' !== 1, True");
+	}
+
 
 	/* 	==============================================================
 		if - else statements (allows only for one option)
@@ -76,7 +110,14 @@ console.log('------Recap Conditionals ----------');
   		================================================================
   	*/
 
-
+			//From above
+	if  ("1" === 1){
+		console.log("'1' === 1, True");
+		document.write("<br>","'1' === 1, True");
+	}else{
+		console.log("False");
+		document.write("<br>","'1' === 1, True");
+	}
 
 	/* 	==============================================================
 		if - else if - else statements (allows for multiple conditionals
@@ -91,6 +132,15 @@ console.log('------Recap Conditionals ----------');
   		================================================================
   	*/
 
+			if ("1" === 1){
+				console.log("'1' === 1, True");
+				document.write("<br>","'1' === 1, True")
+			}else if(1 !== 1){
+				console.log("1 !== 1, True");
+				document.write("<br>","1 !== 1, True")
+			}else{
+				console.log("If - Else If - Else");
+			}
 
 
   	/*
@@ -99,7 +149,17 @@ console.log('------Recap Conditionals ----------');
              || = OR
 	*/
 
+		//AND
+			if ((1===1) && ("hi" === "hi")){
+				console.log("&& logical operator: on side = true");
+				document.write("<br>","&& logical operator: on side = true")
+			}
 
+		//OR
+			if ((1 ==="1") || ("hi" === "hi")){
+				console.log("|| logically operator: on side = true");
+				document.write("<br>","|| logically operator: on side = true");
+			}
 
 	/*
 		Ternary conditional:
@@ -114,7 +174,7 @@ console.log('------Recap Conditionals ----------');
 					//false
 				};
 	*/
-
+	(1 === 1) ? console.log("Ternary Conditonal is True") : console.log("Ternary conditional is false");
 
 /*
 	===============================================
@@ -126,19 +186,52 @@ console.log('------Recap Conditionals ----------');
 console.log('------Recap Functions ----------');
 
     //	1.  BASIC FUNCTION:
-
-
+		var myctr =1;
+			function myCounter(){
+				myctr++;
+				console.log("counter = ", myctr);
+				document.write("<br>","counter = ", myctr);
+			}
+		myCounter(); //to call the function and use it
 
     //	2.  ANONYMOUS FUNCTION
 
+		var myctr2 =1;
+		var myCounter2 = function(){
+			myctr2++;
+			console.log("counter = ", myctr2);
+			document.write("<br>","counter = ", myctr2);
+		};
 
+			myCounter2();
+			myCounter2();
 
     //Anonymous passing arguments
+		var value1 = 1;
+		var value2 = 2;
 
+		var myCounter3 = function(var1, var2){
+			console.log("var1: ",var1 + " " + "var2: ",var2);
+			document.write("<br>","var1: ",var1 + " " + "var2: ",var2);
+			console.log("counter = ", var1 + var2);
+			document.write("<br>","counter = ", var1 + var2)
+		};
+	console.log("var1: ",value1 + " " + "var2: ",value2);
+	document.write("<br>","var1: ",value1 + " " + "var2: ",value2);
+		myCounter3(value1,value2);
 
     //Anonymous passing arguments WITH RETURN
+		var value3 = 1;
+		var value4 = 2;
 
-
+		var myCounter4 = function(var1, var2){
+			return var1 + var2;
+		};
+			//console.log("var1: ",var1 + " " + "var2: ",var2);
+			//document.write("<br>","var1: ",var1 + " " + "var2: ",var2);
+	var myctr3 = myCounter4(value3, value4);
+		console.log(myctr3);
+		document.write("<br>",myctr3);
 
 /*******************************************************************
  	REVIEW COMPLETE
@@ -158,38 +251,51 @@ var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 // Use charAt() to console.log the 'v' in str1.
-
+	console.log(str1.charAt(4));
+	document.write("<br>",str1.charAt(4));
 
 // Use indexOf() to console.log the index of 'm' in str2.
-
+	console.log(str2.indexOf('m'));
+	document.write("<br>",str2.indexOf('m'));
 
 // Use lastIndexOf() to console.log the last 'a' in str1.
-
+	console.log(str1.lastIndexOf('a'));
+	document.write("<br>",str1.lastIndexOf('a'));
 
 // Use length to console.log the length in str1.
-
+	console.log(str1.length);
+	document.write("<br>",str1.length);
 
 // Use split() to console.log an array of the ABC's using the abc variable.
 // EX: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-
+	console.log(abc.split(' '));
+	document.write("<br>",abc.split(''));
 
 //STUDENT ACTIVITY 1:
 // Use substr() to console.log 'JavaScript!' from str1.
-
+	console.log(str1.substr(7,11));
+	document.write("<br>",str1.substr(7,11));
 
 // Use concat() to console.log 'I love JavaScript ! JavaScript loves me!' with str1 and str2.
-
-
+	console.log(str1.concat(str2));
+	document.write("<br>",str1.concat(str2));
 
 //STUDENT ACTIVITY 2:
 // Use substring() to console.log 'JavaScript' from str2.
-
+	console.log(str2.substring(0,10));
+	document.write("<br>",str2.substring(0,10));
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console.log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console.log the str1 all in uppercase letters.
+	console.log(str1.toLowerCase());
+	document.write("<br>",str1.toLowerCase());
+	console.log(str1.toUpperCase());
+	document.write("<br>",str1.toUpperCase());
 
-
+	// use toString() to console.log the type of str1.
+	console.log(typeof str1.toString());
+	document.write("<br>",typeof str1.toString());
 
 /*
 	===============================================
@@ -199,18 +305,26 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 console.log('------ MORE Numbers ----------');
 
-// Use toExponential() console.log num in exponential notation with two decimals.
+	var num = 457896;
+	var dec = 33.123456;
 
+// Use toExponential() console.log num in exponential notation with two decimals.
+	console.log(num.toExponential(2));
+	document.write("<br>",num.toExponential(2));
 
 // Use toPrecision() console.log dec as four numbers.
-
+	console.log(dec.toFixed(4));
+	document.write("<br>",dec.toFixed(4));
 
 //STUDENT ACTIVITY 4:
 //What method would you use to console.log the variable dec with two decimals.
-
+	console.log(dec.toFixed(2));
+	document.write("<br>",dec.toFixed(2));
 
 // Use toString() to console.log the type of num.
-
+	console.log(typeof num.toString());
+	document.write("<br>",typeof num.toString());
+		//We will review "typeof" today
 
 
 /*
@@ -226,16 +340,25 @@ console.log('------ MORE Numbers ----------');
 		0 			== false	| true
 		"" 			== false	| true
 		undefined 	== false	| true  //var does not exist
-		NaN 		== false	| true 
+		NaN 		== false	| true
+		null		== false	| true
 	
 	So the following conditional fails...
 	-----------------------------------------------
 */
 
 console.log('------ MORE Booleans ----------');
+		var num1 = 9 * "k";
+		console.log(num1);
+		document.write("<br>", num1);
 
-
-	
+	if (num){
+		console.log("It's true, the value is: ", num1);
+		document.write("<br>","It's true, the value is: ", num1);
+	}else{
+		console.log("It's false,  the value is: ", num1);
+		document.write("<br>","It's false, the value is: ", num1);
+	}
 /*
 	===============================================
 	MORE:  Arrays
@@ -251,33 +374,61 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 // indexOf()
 //Returns the first (least) index of an element within the array equal
 //to the specified value, or -1 if none is found.
-
+	console.log(arr2.indexOf('c'));
+	document.write("<br>",arr2.indexOf('c'));
 
 // join()
 // Joins all elements of an array into a string.
+		console.log(arr2.join('c'));
+		document.write("<br>",arr2.join('c'));
 
 
 // pop()
 // Removes the last element from an array and returns that element
 // shift() removes the first element from an array.
-
+			var element = arr1.pop();
+			console.log(element);
+			document.write("<br>",element);
+			console.log(arr1);
+			document.write("<br>",arr1);
 
 // push()
 // Adds one or more elements to the end of an array and returns the new
 //   length of the array
 // unshift() - Adds one or more elements to the front of an array.
 
+		arr2.push('f');
+		console.log(arr2);
+		document.write("<br>",arr2);
 
 // reverse()
 // Reverses the order of the elements of an array
+	console.log(arr1.reverse());
+	document.write("<br>",arr1.reverse());
 
 
 // splice()
 // Adds and/or removes elements from an array.
-
+	console.log(arr1);
+	document.write("<br>",arr1);
+	console.log(arr1.splice(4,2)); // NOTE: the array was reversed above
+	document.write("<br>", arr1.splice(4,2));
+	console.log(arr1);
+	document.write("<br>", arr1);
 
 // forEach()
 // Calls a function for each element in the array.
+	console.log(arr1);
+	arr1.forEach(function(element,index,array){
+		console.log("element", element);
+		document.write("<br>", "element", element);
+		console.log("index", index);
+		document.write("<br>", "index", index);
+		console.log("array", array);
+		document.write("<br>", "array", array);
+	});
+
+
 
 
 
@@ -302,6 +453,22 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
     var secondQtr = ["Apr", "May", "Jun"];
     var secondHalfYr = ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
     var combined;
+
+	var combined = firstQtr.concat(secondQtr);
+	console.log("Concat 2 arrays: ", combined);
+	document.write("<br>", "Concat 2 arrays: ", combined);
+
+	var combined = firstQtr.concat(secondQtr, secondHalfYr);
+	console.log("Concat 3 array: ", combined);
+	document.write("<br>","Concat 3 array: ", combined);
+
+	console.log("Joined arrays : ", combined.join());
+	document.write("<br>","Joined arrays : ", combined.join());
+
+	console.log("Took out - ", combined.pop());
+	document.write("<br>","Took out - ", combined.pop());
+	console.log("Show Array: ", combined);
+	document.write("<br>","Show Array: ", combined);
 
 
 /*
