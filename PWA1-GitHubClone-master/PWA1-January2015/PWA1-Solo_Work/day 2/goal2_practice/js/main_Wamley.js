@@ -470,6 +470,10 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 	console.log("Show Array: ", combined);
 	document.write("<br>","Show Array: ", combined);
 
+	var results = secondHalfYr.slice(2,4);
+	console.log("slice: ", results);
+	document.write("<br>","slice: ", results);
+
 
 /*
 	===============================================
@@ -480,6 +484,35 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 */
 
 console.log('------ MORE Operators - typeof() ----------');
+
+	console.log(typeof 5);
+	document.write("<br>",typeof 5);
+	console.log(typeof "Hi");
+	document.write("<br>",typeof "Hi");
+
+	var str1 = "hello";
+	console.log(typeof  str1);
+	document.write("<br>", typeof str1);
+
+	console.log(typeof true);
+	document.write("<br>",typeof true);
+	console.log(typeof function(){});
+	document.write("<br>",typeof function(){});
+	console.log(typeof obj1);
+	document.write("<br>",typeof obj1);
+	console.log(typeof [1,2,3,4,5]);
+	document.write("<br>",typeof [1,2,3,4,5]);
+
+	console.log(typeof  missingVariable);
+	document.write("<br>",typeof  missingVariable);
+
+	if (typeof  myString === "undefined" ){
+		console.log("myString is undefined");
+		document.write("<br>","myString is undefined");
+	}else{
+		console.log("myString is: ", myString);
+		document.write("<br>","myString is: ", myString);
+	}
 
 
 /*
@@ -506,6 +539,35 @@ console.log('------ MORE Operators - typeof() ----------');
 
 console.log('------ MORE Conditionals - Switch ----------');
 
+	//make sure to show mangoes
+	var fruit = "Oranges";
+
+	switch (fruit){
+		case "Oranges":
+			console.log("Oranges are $0.59 a pound.");
+			document.write("<br>","Oranges are $0.59 a pound.");
+			break;
+		case "Apples":
+			console.log("Apples are $0.32 a pound.");
+			document.write("<br>","Apples are $0.32 a pound.");
+			break;
+		case "Bananas":
+			console.log("Bananas are $0.48 a pound.");
+			document.write("<br>","Bananas are $0.48 a pound.");
+			break;
+		case "Cherries":
+			console.log("Cherries are $3.00 a pound.");
+			document.write("<br>","Cherries are $3.00 a pound.");
+			break;
+		case "Mangoes":
+		case "Papayas":
+			console.log("Mangoes and Papayas are $2.79 a pound.");
+			document.write("<br>","Mangoes and Papayas are $2.79 a pound.");
+			break;
+		default:
+			console.log("Sorry, we are out of "+ fruit+".")
+	}
+
 /*******************************************
  STUDENT ACTIVITY 6:
 
@@ -516,6 +578,21 @@ console.log('------ MORE Conditionals - Switch ----------');
 			if no age then console.log "No answer"
 ********************************************/
 
+	var age = 12;
+	switch (age){
+		case 13:
+			console.log("Child.");
+			document.write("<br>","Child.");
+			break;
+		case 18:
+			console.log("Adult.");
+			document.write("<br>","Adult.");
+			break;
+		default:
+			console.log("No Answer");
+			document.write("<br>", "No Answer");
+			break;
+	}
 
 
 /*
@@ -531,6 +608,13 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 console.log('------ MORE Functions ----------');
 
+	var bondsCars = function(){
+		return ["ferrari", "Lambo", "vwBug"]
+	};
+
+	var cars = bondsCars(); // will return the array of values
+	console.log("james bond cars, ", cars);
+	document.write("<br>","james bond cars, ", cars);
 
 	/* 
 		Self Executing Functions
@@ -580,6 +664,12 @@ console.log('------ MORE Functions ----------');
 */
 console.log('------ While / Loop ----------');
 
+	var numOfBeers = 10;
+	while (numOfBeers > 0 ){
+		console.log(numOfBeers + " kegs on the wall.");
+		document.write("<br>", numOfBeers + " kegs on the wall.");
+		numOfBeers--;
+	}
 	
 /*
 	===============================================
@@ -605,6 +695,11 @@ console.log('------ While / Loop ----------');
 
 console.log('------For Loop ----------');
 
+	for (var beers = 10; beers > 0; beers--){
+		console.log(beers+" bottles of beers on the wall.");
+		document.write("<br>",beers+"bottles of beers on the wall.");
+	}
+
 
 	/* 
 		array.Length
@@ -617,7 +712,9 @@ console.log('------For Loop ----------');
 		- in the example below, the last index of the array would be 4 
 			- the  .length property returns the count, which would be 5	
 	*/	
-
+		var myNums = [1,2,3,4,5];
+		console.log("length: ", myNums.length);   //returns a 5
+		document.write("<br>","length: ", myNums.length);
 
 	/* 
 		using the for() loop with .length
@@ -637,7 +734,10 @@ console.log('------For Loop ----------');
 		- depending on the size of an array, it can be more efficient to 
 			save the array length in a variable, inside the first statement
 	*/
-
+		for (var i= 0, j=myNums.length; i<j; i++){ // see the array above
+			console.log("1. length in for the loop: ", myNums[i]);
+			document.write("<br>","1. length in for the loop: ", myNums[i]);
+	}
 
 	/*
 		BREAK...
@@ -646,7 +746,15 @@ console.log('------For Loop ----------');
 		- by using the "break" statement, any loop will stop running at the 
 			break point, and perform no more iterations
 	*/
-
+		for (var i= 0, j=myNums.length; i<j; i++){
+			if(i === 3){
+				console.log("testing out of the break and it broke");
+				document.write("<br>","testing out of the break and it broke");
+				break;
+			}
+			console.log("2. length in for the loop: ", myNums[i]);
+			document.write("<br>","2. length in for the loop: ", myNums[i])
+		}
 
 
 	/*
@@ -657,8 +765,19 @@ console.log('------For Loop ----------');
 			on to the next iteration
 	*/
 
+	for (var i= 0, j=myNums.length; i<j; i++){
+		if(i === 3){
+			console.log("testing out of the break and it broke");
+			document.write("<br>","testing out of the break and it broke");
+			continue;
+		}
+		console.log("3. length in for the loop: ", myNums[i]);
+		document.write("<br>","3. length in for the loop: ", myNums[i])
+	}
 
-/*******************************************
+
+
+	/*******************************************
  STUDENT ACTIVITY 7:
 
 	1.  create an array with the following cartoon characters
@@ -669,8 +788,21 @@ console.log('------For Loop ----------');
 		b.  create a for loop using the faster method (4 parameters)
 			- in the loop just console.log the values
 ********************************************/
+var cartoonDudes = [
+		"Batman",
+		"Wolverine",
+		"Iceman",
+		"Iceman"
+	];
 
+	for (var i= 0; i<cartoonDudes.length;i++){//slower version
+		console.log(cartoonDudes[i]);
+		document.write("<br>",cartoonDudes[i]);
+	}
 
+	for (var i= 0, max=cartoonDudes.length; i<max; i++){
+		console.log(cartoonDudes[i]);
+	}
 
 /*******************************************
     STUDENT ACTIVITY 8: (More Practice):
@@ -694,6 +826,43 @@ console.log('------For Loop ----------');
 
     var name = 'This is a nice change of pace';
 
+	console.log(name);
+	document.write("<br>",name);
+	console.log(name.toLowerCase());
+	document.write("<br>",name.toLowerCase());
+	console.log(name.toUpperCase());
+	document.write("<br>",name.toUpperCase());
 
+	console.log(name.charAt(3));
+	document.write("<br>",name.charAt(3));
+	console.log(name.indexOf("nice"));
+	document.write("<br>",name.indexOf("nice"));
+	console.log(name.slice(10,14));
+	document.write("<br>",name.slice(10,14));
+	console.log(name.substring(10,14));
+	document.write("<br>",name.substring(10,14));
+
+	var array1 = name.split(" ");
+	console.log(array1);
+	document.write("<br>",array1);
+	console.log(array1[4]);
+	document.write("<br>",array1[4]);
+
+	console.log(array1.join("|"));
+	document.write("<br>",array1.join("|"));
+	console.log(array1.reverse());
+	document.write("<br>",array1.reverse());
+
+	console.log(array1.slice(1));
+	document.write("<br>",array1.slice(1));
+
+	console.log(array1.push("New Value"));
+	document.write("<br>",array1.push("New Value"));
+	console.log(array1);
+	document.write("<br>",array1);
+
+	array1.pop();
+	console.log(array1);
+	document.write("<br>", array1)
 
 })();
