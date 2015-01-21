@@ -105,8 +105,14 @@ function displayCar(car) {
     document.write("<br>"+"COLORS has this many Keys: " +Object.keys(colors).length);
     document.write("<br>"+"CONVERTIBLE has this many Keys: " +Object.keys(convertible).length);
 
+
+    for (var key in car){
+        document.write("<br>","For in loop results: ",key,": ",car[key]," ");
+        console.log("For in Loop Results: ",key,":", car[key]," ");
+    }
 }
     var carToSell = makeCar();
     displayCar(carToSell);
+
 
 
