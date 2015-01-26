@@ -22,12 +22,12 @@
     //CREATE ARRAY OF OBJECT FOR 2 FIGHTERS
     var fighters = [
         {
-            name:"Spiderman",
+            name:"Storm",
             damage:20,
             health:100
         },
         {
-            name: "Batman", //index1.name or index[1] with object-key "name" = Batman
+            name: "Rogue", //index1.name or index[1] with object-key "name" = Batman
             damage: 20,
             health: 100
 
